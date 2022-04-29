@@ -89,6 +89,7 @@ function playGame() {
   if (oldColorBtn !== "") currentTool = oldColorBtn.getAttribute("tool");
   oldTool = "none";
   bank.setAttribute("class", "");
+  bank.removeEventListener("click", eventBank);
   const sky = {
     class: "sky",
     tool: "none",
