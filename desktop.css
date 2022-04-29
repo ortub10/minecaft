@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  height: 98vh;
+}
+
+#game_board {
+  width: 90%;
+  height: 99%;
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(16, 1fr);
+}
+#start_game {
+  align-self: flex-end;
+  margin-bottom: 10rem;
+  padding: 1.5rem 3rem;
+  background-color: green;
+  color: aqua;
+}
+.opening {
+  width: 80%;
+  height: 100vh;
+  background: url("./img/opening.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contain_btn {
+  height: 99%;
+}
+
+.game_screen {
+  width: 80%;
+  display: none;
+  align-items: center;
+  gap: 1rem;
+}
+.tools_sidebar {
+  background: #333333;
+  width: 20vw;
+  padding: 5rem 1rem;
+  color: white;
+}
+
+.tools_sidebar_toolsList {
+  display: grid;
+  justify-items: center;
+  grid-gap: 2rem;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.tool {
+  padding: 1rem;
+  text-align: center;
+  width: 50%;
+  font-size: 0.9em;
+  border: 2px solid white;
+  transition: background 0.5s ease-in-out;
+}
+
+.tool:hover {
+  background: blue;
+}
+
+.tool .img {
+  height: 80%;
+  width: 80%;
+  margin: 0 auto;
+  background: white;
+  background-size: contain;
+}
+
+.tool[data-tool="1"] > .img {
+  background: url("./img/tools/shovel.png") no-repeat center center/contain;
+}
+
+.tool[data-tool="0"] > .img {
+  background: url("./img/tools/pickaxe.png") no-repeat center center/contain;
+}
+
+.tool[data-tool="2"] > .img {
+  background: url("./img/tools/axe.png") no-repeat center center/contain;
+}
+
+#bank {
+  width: 8vh;
+  height: 8vh;
+  border: 2px solid white;
+}
+#reset {
+  background-color: aqua;
+  padding: 1rem;
+}
+
+.sky {
+  background-color: #87ceeb;
+}
+
+.wood {
+  background: url("./img/tiles/wood.jpg") no-repeat center center/cover;
+}
+
+.rock {
+  background: url("./img/tiles/rock.jpg") no-repeat center center/cover;
+}
+
+.leaves {
+  background: url("./img/tiles/leaves.jpg") no-repeat center center/cover;
+}
+
+.dirt {
+  background: url("./img/tiles/dirt.jpg") no-repeat center center/cover;
+}
+
+.dirt_grass {
+  background: url("./img/tiles/dirt-grass.jpg") no-repeat center center/cover;
+}
+
+.sky:hover,
+.wood:hover,
+.rock:hover,
+.leaves:hover,
+.dirt:hover,
+.dirt_grass:hover {
+  border: 1px solid white;
+}

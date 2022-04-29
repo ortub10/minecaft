@@ -4,10 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./desktop.css" />
+    <title>Munecaft</title>
   </head>
   <body>
+    <div id="opening" class="opening">
+      <button id="start_game">START GAME</button>
+    </div>
+    <div id="game_screen" class="game_screen">
+      <div class="contain_btn">
+        <button id="reset">RESET GAME</button>
+      </div>
+      <div id="game_board"></div>
+    </div>
+
+    <div class="tools_sidebar">
+      <div class="tools_sidebar_toolsList">
+        <div id="pickaxe" tool="pickaxe" class="tool" data-tool="0">
+          <div class="img"></div>
+          <h3>PICKAXE</h3>
+        </div>
+        <div id="shovel" tool="shovel" class="tool" data-tool="1">
+          <div class="img"></div>
+          <h3>SHOVEL</h3>
+        </div>
+        <div id="axe" tool="axe" class="tool" data-tool="2">
+          <div class="img"></div>
+          <h3>AXE</h3>
+        </div>
+
+        <div tool="none" id="bank" data-type=""></div>
+      </div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
