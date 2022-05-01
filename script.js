@@ -28,6 +28,7 @@ function eventBank() {
   back = true;
   bankIsEmpty = true;
   oldColorBtn.style.backgroundColor = "";
+  oldColorBtn = "";
 }
 
 function addEventTool(first, second, third) {
